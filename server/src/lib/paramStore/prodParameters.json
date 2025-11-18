@@ -1,0 +1,12 @@
+{
+	"mysql": {
+		"host": "127.0.0.1",
+		"user": "dbadmin",
+		"password": "S4ZYp$c}q6S:T7aP",
+		"database": "erp",
+		"port": 3306
+	},
+	"credentials": {
+		"jwtSecret": "9FZID6AKGFVV4J99T3HJ"
+	}
+}

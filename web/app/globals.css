@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: #eef5f9;
+  color: #67757c;
+  height: 100%;
+}
+
+@layer components {
+  .page-aside-label {
+    font-size: 0.75rem;
+    line-height: 1.33;
+    font-weight: 500;
+    color: #32324d;
+  }
+
+  .page-aside-value {
+    font-size: 0.75rem;
+    line-height: 1.33;
+    color: #32324d;
+  }
+
+  .content-button {
+    background-color: #f5f5f5;
+  }
+
+  .content-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .content-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    font-weight: 600;
+    color: #32324d;
+  }
+}
+
+.Toastify__toast-container {
+  padding: 16px;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.Toastify__toast-body {
+  font-size: 14px;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.Toastify__toast-icon {
+  width: 14px;
+  height: 14px;
+}
+
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    padding: 16px;
+  }
+
+  .Toastify__toast {
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .Toastify__toast-body {
+    font-size: 14px;
+    word-break: break-word;
+    white-space: pre-line;
+  }
+
+  .Toastify__toast-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.ant-card-head-title {
+  font-weight: 400;
+  color: #455a64;
+}
+
+.ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.ant-breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+/* .ant-select-dropdown {
+	width: auto !important;
+} */
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* color of the scroll thumb */
+}

@@ -1,0 +1,12 @@
+{
+	"mysql": {
+		"host": "127.0.0.1",
+		"user": "root",
+		"password": "davka22",
+		"database": "my_forex",
+		"port": 3306
+	},
+	"credentials": {
+		"jwtSecret": "9FZID6AKGFVV4J99T3HJ"
+	}
+}
