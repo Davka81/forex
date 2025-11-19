@@ -39,12 +39,23 @@ class Handler {
     }
   }
 
+  @adminGuard
+  public async week(req: Request, res: Response, next: NextFunction, reqAdmin: AdminJWTData) {
+    try {
+      const data = await this.historyQueryService.weekProfit();
+      return successResponse(res, { success: true, data });
+    } catch (error) {
+      throw new ErrorWithCode(error.code ?? "UPLOAD_FAILED", error.message ?? "Failed to upload data");
+    }
+  }
+
 }
 
 export const createHistoryRouter = (...params: [HistoryService, HistoryQueryService]) => {
   const router = Router();
   const handler = new Handler(...params);
 
+  router.get("/week", handler.week.bind(handler));
   router.post("/upload", handler.upload.bind(handler));
 
   return router;

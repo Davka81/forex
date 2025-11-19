@@ -16,8 +16,14 @@ const deposit = async () => {
   return response;
 }
 
+const week = async () => {
+  const { data: response } = await axiosInstance.get("/v1/history/week");
+  return response;
+}
+
 export default {
   historyUpload,
   depositUpload,
-  deposit
+  deposit,
+  week
 }
